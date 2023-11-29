@@ -1,0 +1,138 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+header {
+  width: 100%;
+  background-color: rgb(194, 193, 193);
+}
+
+#id-btn-menu {
+  display: none;
+}
+
+#id-search {
+  text-align: left;
+  font-weight: bold;
+  border-radius: 20px;
+  padding: 10px;
+  width: 95%;
+  height: 60%;
+  position: relative;
+  outline:none !important;
+  outline-width: 0 !important;
+}
+
+#id-add-photo {
+  position: initial;
+}
+
+#id-login-profile {
+  position: initial;
+}
+
+header label {
+  display: none;
+  width: 50px;
+  height: 50px;
+  padding: 10px;
+  border-right: 1px solid #fff;
+}
+
+header label:hover {
+  cursor: pointer;
+  background: rgba(0,0,0,0.3);
+}
+
+.class-menu ul {
+  margin: 0;
+  list-style: none;
+  padding: 0;
+  display: flex;
+  border-bottom: 3px solid black;
+}
+
+.class-menu li {
+  max-width: 20%;
+  flex-grow: 1;
+  border-right: 1px solid #fff;
+  text-align: center;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.class-menu li:hover {
+  background: rgba(0,0,0,0.3);
+} 
+
+.class-menu li a {
+  display: block;
+  position: relative;
+  white-space: pre-line;
+  top: 10%;
+  padding: 25px 35px;
+  color: black;
+  text-decoration: none;
+}
+
+@media (max-width:950px) {
+  
+  header label {
+    display: block;
+  }
+
+  .class-menu {
+    position: absolute;
+    z-index: 5;
+    background:  rgb(194, 193, 193);
+    width: 70%;
+    margin-left: -70%;
+    transition: all 0.4s;
+  }
+
+  .class-menu ul {
+    flex-direction: column;
+    border-bottom: none;
+  }
+
+  .class-menu li {
+    max-width: initial;
+    border-top: 1px solid #fff;
+  }
+
+  #id-btn-menu:checked ~ .class-menu {
+    margin: 0;
+  }
+
+  #id-search {
+    text-align: left;
+    font-weight: bold;
+    border-radius: 20px;
+    padding: 10px;
+    width: 95%;
+    height: 60%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    position: relative;
+    outline:none !important;
+    outline-width: 0 !important;
+  }
+}
+
+  .class-menu a {
+    font-family: sans-serif;
+    font-weight: bold;
+  }
+
+  #id-no-loged:hover {
+    color: white;
+  }
+
+  a#id-desplegable-perfil-logout:hover {
+    background-color: black;
+ }
+
+ a#id-desplegable-perfil-profile:hover {
+  background-color: black;
+}

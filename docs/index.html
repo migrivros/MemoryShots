@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MemoryShots - Inicio </title>
+    <link rel="icon" type="image/png" href="../docs/images/Logotipo.png" sizes="450x450">
+    <link rel="stylesheet" type="text/css" href="./css/style.css"/>
+    <script src="./js/utils/include.js"></script>
+    <script src="./js/libs/jquery-3.4.1.min.js"></script>
+    <script src="./js/libs/popper.min.js"></script>
+    <script src="./js/libs/bootstrap.min.js"></script>
+    <script src="./js/index.js" type="module"></script>
+    <script src="./js/header.js" type="module"></script>
+    <script src="./js/libs/axios.min.js"></script>
+</head>
+
+<body>
+        <div id="id-page-header"></div>
+
+        <div>
+            <nav class="class-reciente-seguido">
+                <ul>
+                    <li><a href="index.html"><b>Recientes</b></a></li>
+                    <li id="id-follow-option"><a href="index-follow.html"><b>Seguidos</b></a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <br>
+        <div class="container" id="errors"></div>
+
+        <div class="gallery-container"> </div>
+
+
+        <footer class="class-footer">
+            <a href="https://github.eii.us.es/migrivros/Proyecto-curso-IISSI2">GitHub</a>
+        </footer>
+    
+    <script>
+        include("header.html", "#id-page-header");
+    </script>
+</body>
+</html>
